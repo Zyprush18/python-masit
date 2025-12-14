@@ -92,14 +92,15 @@
 # b = 5.7
 # print(type(b))
 
-# complex
-# c = 50j
+# complex 
+# c = 50j 
 # print(type(c))
 
 # konversi int 
 # d = 5.6
 # print(type(d))
 # print(type(int(d)))
+
 
 # f = 4
 # print(type(f))
@@ -108,10 +109,14 @@
 
 # o = 9
 # l = 9.4
-# print(type(o))
+# print(type(l))
 # print(type(complex(o)))
 # print(type(complex(l)))
 # print(complex(l))
+
+# s = "2"
+# print(type(s))
+# print(type(complex(s)))
 
 # boolean
 # t = True 
@@ -119,13 +124,14 @@
 # p = 0
 # q = 1
 
-# print(type(bool(p)))
-# print(type(bool(q)))
+# print(bool(p))
+# print(bool(q))
 
 # list
-# k = [1,2,3,4,5] # ndak boleh diubah
+# k = [1,2,3,4,5] # tidak boleh di ubah
+
 # print(k[2])
-# print(k[1:])
+# print(k[2:])
 # print(k[1:4])
 # print(k[:3])
 
@@ -136,23 +142,31 @@
 # k.append(7)
 # print(k)
 
-# k.remove("saya")
+# k.remove(4)
 # print(k)
 
 # k.sort(reverse=True)
 # print(k)
 
+# v = k # dengan bgini value k da tidak ikut berubah
+# v[2] = 9
+
+# print(k) 
+# print(v)
+
 # v = k.copy() 
-# v[0] = 9
+# v[2] = 9
 # k[0] = 10
 
 # print(k)
-
-# q = ["a","b","c"]
-# v.extend(q)
 # print(v)
 
-# print(v.clear())
+
+# q = ["a","b","c"]
+# k.extend(q)
+# print(k)
+
+# print(k.clear())
 # kkk = "jfjfnjneonwjnfjwnf"
 # print(len(kkk))
 
@@ -161,94 +175,101 @@
 # name = ("budi", "lala", "eko") # -> immutable/tidak bisa di ubah/ konstanta
 # print(name[1])
 # listname = list(name)
-# listname[1] = 1
-# listname.insert(1, "lalalal")
-# listname.remove("eko")
+# listname[1] = "po"
+# listname.insert(1,"upin")
+# # listname.remove("eko")
 # name = tuple(listname)
 # print(name)
 
-# name1,*name2 = name
+# name1= ("tari", "bagas", "raden")
 # print(name1)
 # print(name2)
+# print(name3)
 
 # newname = ("suci","dika","rahman")
-# name += newname
-# print(name)
-
+# name1 += newname
+# kelompok2 = name1 + newname
+# print(name1)
 
 
 # set
 # gh = {"dipsi","lala", "po"}
 
 # print(type(gh))
-# gh.add("ibnu")
+# gh.add("rahul")
 
 # jh = {"eko","eman","sanz"}
 # lh = ["edo","gani"]
 # gh.update(jh)
 # gh.update(lh)
 
-# gh.remove("po")
+
+# gh.remove("zaim")
 # gh.discard("zul")
+
+# print(gh)
+
+
 
 # mh = {"jokowi","prabowo", "anies"}
 # nh = {"gagak","kucing","anjing"}
 # ll = gh.union(mh,nh)
-# ll = gh | mh | nh
+# lf = gh | mh | nh
 # gh.update(mh, nh)
+# print(ll)
+# print(lf)
 # print(gh)
 
 
 # dictionary
-kamar = {
-    "meja1":{
-        "name" : ["Agus", "mamang", "ibnu"], "age": 5, "address": "jl.compang camping"
+# rumah = {
+#     "kamar_ortu":"barang ortu", 
+#     "kamar_mu": "barang mu", 
+#     "kamar_adik": "barang adik"
+# }
+
+# print(rumah["kamar_adik"])
+# rumah["kamar_tamu"] = "barang tamu"
+# rumah["kamar_mu"] = "barang sepupu"
+# del rumah["kamar_tamu"]
+# rumah.pop("kamar_tamu")
+
+# print(rumah)
+
+# gabungan 
+
+siswa = [
+    {
+        "nama_siswa": "Udin",
+        "nilai": [30, 69, 85],
+        "motor": ("supra", "vega"),
     },
-
-    "meja2":{
-        "name" : ["Agus", "mamang", "ibnu"], "age": 5, "address": "jl.compang camping"
+    {
+        "nama_siswa": "Tani",
+        "nilai": [30, 69,85],
+        "mobil":{"supra", "ferari"},
     },
+]
 
-    "meja3": [
-        {
-            "name": "lala"
-        },
+'''
+1. matematika
+2. fisika
+3. olahraga
+'''
 
-        (
-            "dipsi",
-            "po", 
-            [
-                "lala", 
-                {
-                    "name": "ibnu"
-                },
-                {
-                    "maman"
-                }
-            ]
-        ),
-        
-        [
-            {
-                "name": 'Maxim'
-            }
-        ]
-    ]
 
-    
-}
+siswa[0]["nilai"][0] = 75
+print(siswa)
 
-print(kamar['meja3'][1][2][1]["name"])
-kamar['meja3'][1][2][1].update({"name": "zul"})
-print(kamar['meja3'][1][2][1]["name"])
-print(type(kamar))
-# kamar['meja2']["age"] = [5, 10, 45]
-kamar["meja2"].update({"age": [5, 10, 45]})
-kamar['meja1']["makanan_favorit"] = "nasi goreng"
-kamar["meja2"].pop("address")
-# del kamar["address"]
-print(kamar["meja1"])
-print(kamar["meja2"])
+# udin = siswa[0]["nilai"]
+# mtk = udin[0]
+# fisika = udin[1]
+# olahraga = udin[2]
+
+# print(f"nilai matematika udin adalah {mtk}")
+# print(f"nilai fisika udin adalah {fisika}")
+# print(f"nilai olahraga udin adalah {olahraga}")
+
 
 
 
