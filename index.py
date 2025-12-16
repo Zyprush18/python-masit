@@ -178,7 +178,7 @@
 # listname[1] = "po"
 # listname.insert(1,"upin")
 # # listname.remove("eko")
-# name = tuple(listname)
+# name = tuple(listname)    ini di tambahakan.....
 # print(name)
 
 # name1= ("tari", "bagas", "raden")

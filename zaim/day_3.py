@@ -49,17 +49,21 @@ data = {
 
 
 # list
-
-
 data["list"].append("mangga")
 data["list"].remove("pisang")
 data["list"][1] = "anggur"
-data["set"].update("burung")
-data["set"].remove("anjing")
-data["set"].update("ikan")
-
-
-
+data["set"].add("burung")
+data["set"].discard("anjing")
+data["set"].add("ikan")
+listname = list (data["tuple"])
+listname.insert(1, 40)
+listname.pop(2)
+listname[2] = 35
+data["tuple"] = tuple(listname)
+data["dict"]["alamat"] = "jakarta"
+(data["dict"])["umur"] = 18
+del data["dict"]["kelas"]
 
 
 print(data)
+
