@@ -238,28 +238,27 @@
 
 # gabungan 
 
-siswa = [
-    {
-        "nama_siswa": "Udin",
-        "nilai": [30, 69, 85],
-        "motor": ("supra", "vega"),
-    },
-    {
-        "nama_siswa": "Tani",
-        "nilai": [30, 69,85],
-        "mobil":{"supra", "ferari"},
-    },
-]
+# siswa = [
+#     {
+#         "nama_siswa": "Udin",
+#         "nilai": [30, 69, 85],
+#         "motor": ("supra", "vega"),
+#     },
+#     {
+#         "nama_siswa": "Tani",
+#         "nilai": [30, 69,85],
+#         "mobil":{"supra", "ferari"},
+#     },
+# ]
 
-'''
-1. matematika
-2. fisika
-3. olahraga
-'''
+# 1. matematika
+# 2. fisika
+# 3. olahraga
 
 
-siswa[0]["nilai"][0] = 75
-print(siswa)
+
+# siswa[0]["nilai"][0] = 75
+# print(siswa)
 
 # udin = siswa[0]["nilai"]
 # mtk = udin[0]
@@ -274,6 +273,195 @@ print(siswa)
 
 
 # operator
+
+# operator aritmatika
+
+# a = 4
+# b = 3
+
+
+# print(a + b)
+# print(a - b)
+# print(a * b)
+# print(a / b)
+# print(a % b)
+# print(a // b)
+# print(a ** b)
+
+# operator penugasan
+# c = 5 
+# d = 8
+
+# c %= d # c % d
+# print(c)
+
+# a = 0
+
+# for i in range(1,11):
+    # print(f'nilai a = {a}')
+    # print(f'nilai i = {i}')
+    # a += i # a = a + i
+
+# print(a)
+
+# operator perbandingan
+
+# a = 4
+# b = 3
+
+# print(a < b) # < kurang dari -> 4 < 3
+# print(a > b) # > lebih dari -> 4 > 3
+# print(a == b) #  == sama dengan -> 4 = 3
+# print(a <= b) #  <= kurang dari sama dengan -> 4 < atau sama dengan 3
+# print(a >= b) #  >= lebih dari sama dengan -> 4 > atau sama dengan 3
+# print(a != b)
+
+# operator logika
+
+"""
+and
+or 
+not
+"""
+
+# print(3 > 4 and 4 < 5)
+'''
+ true and true = true
+ false and true = false
+ true and false =  false
+ false and false = false 
+'''
+
+# print(3 > 4 or 4 < 5)
+'''
+true or true = true 
+true or false = true
+false or true = true 
+f;ase or false = false
+'''
+
+#print(not(4 > 4)) # tidak salah
+'''
+not(true) = false
+not(false) = true
+'''
+
+# operator indetitas
+# kcyinn = "karin"
+# zyprush = "zul"
+# zenbu = zyprush
+
+
+# print(kcyinn is zenbu) 
+# print(zyprush is zenbu) 
+# print(kcyinn is not zenbu) 
+
+# operator member
+# zyprush = ["angga","farel","koko"]
+
+# print("karin" not in zyprush)
+
+# operator bitwisee
+'''
+&
+|
+^
+~
+<<
+>>
+'''
+
+# print(6 & 3)
+
+''' 16 8 4 2 1
+--------------
+6 = 0  0 1 1 0
+3 = 0  0 0 1 1
+--------------- &
+2 = 0 0 0 1 0    
+'''
+
+# print(4 & 2)
+''' 4 2 1
+--------------
+5 = 1 0 1
+2 = 0 1 0
+--------------- &
+0 = 0 0 0
+'''
+
+
+# print(3 | 4)
+''' 4 2 1
+--------------
+3 = 0 1 1
+2 = 1 0 0
+--------------- |
+7 = 1 1 1
+'''
+
+
+# print(5 | 9)
+
+# print(4 ^ 6) #xor
+''' 4 2 1
+--------------
+4 = 1 0 0
+6 = 1 1 0
+--------------- ^
+2 = 0 1 0
+'''
+
+
+# print(12 ^ 16)
+
+# print(~3)
+
+''' 8 4 2 1
+--------------
+3 = 0 0 1 1
+--------------- ~
+-4 =1 1 0 0
+'''
+
+
+# print(~1)
+
+# print(4 << 2)
+'''32 16 8 4 2 1
+--------------
+4 = 0 0 0 1 0 0
+--------------- <<
+16= 0 1 0 0 0 0
+'''
+
+
+# print(5 << 3)
+
+
+print(8 >> 2)
+''' 8 4 2 1
+--------------
+4 = 1 0 0 0
+--------------- >>
+r = 0 0 1 0
+'''
+
+print(3 >> 2)
+
+''' 8 4 2 1
+--------------
+3 = 0 0 1 1
+--------------- >>
+0 = 0 0 0 0
+'''
+
+print(6 >> 2)
+
+
+
+
+
 
 # if
 
