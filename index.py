@@ -439,7 +439,7 @@ not(false) = true
 # print(5 << 3)
 
 
-print(8 >> 2)
+# print(8 >> 2)
 ''' 8 4 2 1
 --------------
 4 = 1 0 0 0
@@ -447,7 +447,7 @@ print(8 >> 2)
 r = 0 0 1 0
 '''
 
-print(3 >> 2)
+# print(3 >> 2)
 
 ''' 8 4 2 1
 --------------
@@ -456,22 +456,93 @@ print(3 >> 2)
 0 = 0 0 0 0
 '''
 
-print(6 >> 2)
+# print(6 >> 2)
 
 
 
 
 
-
+# control flow -> sebuah cara untuk memberi tahu program kapan harus mulai dan kapan harus berhenti
+# pengkondisian
 # if
 
+ketersedian = ['tempe', 'ayam']
+
+if ketersedian == 'ayam':
+    print('makan ayamm')
+elif ketersedian == 'tahu':
+    print('makan tahu')
+elif ketersedian == 'tempe':
+    print('makan tempeee')
+elif ketersedian == ['tempe', 'ayam']:
+    print('makan ayam dan tempe')
+else:
+    print('ko mo makan apa')
+
+# ternary operator
+# nilai = 70
+# if nilai >= 75:
+#     print('masuk nilai KKM')
+# elif nilai >= 90:
+#     print('jeniusss')
+# else:
+#     print('tidak masuk nilai KKM')
+
+# print('masuk nilai KKM') if nilai >= 75 else print('tidak masuk nilai KKM')
+# print(('tidak masuk nilai KKM', 'masuk nilai KKM')[nilai >= 75])
+
+# big_num = '5 besar' if 5 > 3 else '3 besar'
+# print(big_num)
+
+
+# match
+# hari = "minggu"
+# match hari:
+#     case "senin"|"selasa"|"rabu"|"kamis"|"jumat":
+#         print('masuk kampus')
+#     case "sabtu"|"minggu":
+#         print("Libuuurr")
+
+
+# perulangan
 # for sama while
 
+# for 
+# nama = ['andi','eko','eman','aril']
+# for v in nama:
+#     print(f'{v}')
+
+# for i in range(0,10, 3):
+#     print(i)
+
+# while
+# counter = 1
+# while counter < 10:
+#     if counter == 5:
+#         pass
+
+#     print(counter)
+
+#     counter += 1
+
+# for i in range(10):
+#     if i == 7:
+#         pass
+    
+#     print(i)
+
+
+# if 5 > 4:
+#     pass
+# else:
+#     print('lalal')
 
 
 
 # function
 # range
+# module
+# oop
 # array
 # iterator
 
